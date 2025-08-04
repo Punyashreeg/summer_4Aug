@@ -1,0 +1,48 @@
+/* Container + global font */
+section {
+  max-width: 400px;
+  margin: 1rem auto;
+  font-family: sans-serif;
+}
+
+/* Heading underline */
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #333;
+}
+
+/* Flex-wrapped badge-style list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual skill tag */
+.skills-list li {
+  padding: 0.6em 1em;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.25s ease;
+}
+
+/* Emoji icon before each tag (hidden from screen-readers) */
+.skills-list li::before {
+  content: "✔️";
+  margin-right: 0.4em;
+}
+
+/* Hover effect */
+.skills-list li:hover {
+  background-color: #e0e0e0;
+}
+
